@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
-      <img src="images/logo.svg" alt="News logo" class="logo" />
+    <header>
+      <img src="images/logo.svg" alt="logo" />
       <nav>
-        <ul class="nav-links">
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
@@ -20,16 +24,73 @@
       </nav>
     </header>
 
-    <main class="main-content">
-      <!-- Featured article will go here -->
-
-      <aside class="new-articles">
-        <!-- "New" section will go here -->
-      </aside>
-
-      <section class="article-grid">
-        <!-- Bottom article grid will go here -->
+    <main class="grid-container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <img src="images/image-web-3-desktop.jpg" alt="Web 3" />
+        <div class="hero-text">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
       </section>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>New</h2>
+        <article>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article>
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article>
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </aside>
     </main>
+    <!-- Bottom Articles -->
+    <section class="bottom-articles">
+      <div class="article-card">
+        <img src="images/image-retro-pcs.jpg" alt="Retro PCs" />
+        <div class="article-info">
+          <span>01</span>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/image-top-laptops.jpg" alt="Top laptops" />
+        <div class="article-info">
+          <span>02</span>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/image-gaming-growth.jpg" alt="Gaming growth" />
+        <div class="article-info">
+          <span>03</span>
+          <h4>The Growth of Gaming</h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
