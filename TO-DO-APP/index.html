@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme To-Do App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="app-title">
+                <span class="title-icon">✓</span>
+                VibeandCode Todo
+            </h1>
+            <p class="app-subtitle">Organize your tasks with style</p>
+        </header>
+
+        <div class="add-task-section">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Add a new task..." 
+                    class="task-input"
+                    maxlength="100"
+                >
+                <div class="date-inputs">
+                    <div class="date-group">
+                        <label for="startDate" class="date-label">Start Date</label>
+                        <input 
+                            type="datetime-local" 
+                            id="startDate" 
+                            class="date-input"
+                        >
+                    </div>
+                    <div class="date-group">
+                        <label for="endDate" class="date-label">Due Date</label>
+                        <input 
+                            type="datetime-local" 
+                            id="endDate" 
+                            class="date-input"
+                        >
+                    </div>
+                </div>
+                <button id="addTaskBtn" class="add-btn">
+                    <span class="btn-icon">+</span>
+                    Add Task
+                </button>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <div class="task-counter">
+                <span id="taskCount">0 tasks</span>
+            </div>
+        </div>
+
+        <div class="tasks-section">
+            <ul id="taskList" class="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">📝</div>
+                <h3>No tasks yet</h3>
+                <p>Add a task above to get started!</p>
+            </div>
+        </div>
+
+        <div class="app-footer">
+            <button id="clearCompletedBtn" class="clear-btn">
+                Clear Completed
+            </button>
+        </div>
+    </div>
+
+    <!-- Half Moon Gradient Decoration -->
+    <div class="half-moon-gradient"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
