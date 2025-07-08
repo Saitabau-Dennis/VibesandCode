@@ -1,1 +1,1 @@
-# VibesandCode
+# VibeandCode
